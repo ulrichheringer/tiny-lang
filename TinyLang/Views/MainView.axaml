@@ -1,0 +1,7 @@
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:vm="using:TinyLang.ViewModels" mc:Ignorable="d" d:DesignWidth="850" d:DesignHeight="620" x:Class="TinyLang.Views.MainView" x:DataType="vm:MainViewModel">
+  <ScrollViewer><StackPanel Margin="28" Spacing="16" MaxWidth="780" HorizontalAlignment="Center">
+    <TextBlock Text="Tiny Lang" FontSize="30" FontWeight="Bold"/><TextBlock Text="Uma linguagem pequena: let, expressões aritméticas e print." Opacity="0.75"/>
+    <TextBox Text="{Binding Source}" AcceptsReturn="True" MinHeight="220" FontFamily="monospace" TextWrapping="Wrap"/><Button Content="Executar" Command="{Binding RunCommand}" HorizontalAlignment="Left"/>
+    <TextBlock Text="Console" FontSize="18" FontWeight="SemiBold"/><Border Padding="16" CornerRadius="8" Background="#0F172A"><TextBlock Text="{Binding Output}" Foreground="#A7F3D0" FontFamily="monospace" TextWrapping="Wrap"/></Border>
+  </StackPanel></ScrollViewer>
+</UserControl>

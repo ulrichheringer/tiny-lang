@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="TinyLang.Browser/TinyLang.Browser.csproj" />
+  <Project Path="TinyLang.Desktop/TinyLang.Desktop.csproj" />
+  <Project Path="TinyLang/TinyLang.csproj" />
+</Solution>
