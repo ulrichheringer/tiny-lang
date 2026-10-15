@@ -1,21 +1,26 @@
 # tiny-lang
 
-Interpretador de uma linguagem pequena com variáveis, expressões e console.
+An interactive interpreter for a small language with variables, arithmetic expressions, and print statements.
 
-## Desktop
+## Run
 
-```sh
+Requires the .NET 10 SDK. Browser builds also need the WebAssembly workload: `dotnet workload install wasm-tools`.
+
+### Desktop
+
+~~~sh
 dotnet run --project TinyLang.Desktop/TinyLang.Desktop.csproj
-```
+~~~
 
-## Browser
+### Browser
 
-Requer o workload wasm-tools do .NET 10.
-
-```sh
+~~~sh
 dotnet run --project TinyLang.Browser/TinyLang.Browser.csproj
-```
+~~~
 
-## Exemplo
+## Example
 
-let value = 6; print value * 7;
+~~~text
+let value = 6;
+print value * 7;
+~~~
